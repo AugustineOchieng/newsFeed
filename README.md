@@ -9,7 +9,8 @@
 
 ## Description
 
-News Highlight is a python built application that displays a list of various news sources.On choosing the news source it displays the top news.One is also
+News Highlight is a python built application that displays a list of various news sources.On choosing the news source it displays the top news.One is also able to view news headlines.
+
 
 ## User Stories
 These are the behaviours that the  application
@@ -42,7 +43,7 @@ As a user i would like to:
 ## Cloning
 * In your terminal:
 
-       $ git clone:https://jonesmwas.herokuapp.com/
+       $ git clone:https://gustinews.herokuapp.com/
 
 ## Running the Application
 
