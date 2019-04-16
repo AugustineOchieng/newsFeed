@@ -9,7 +9,7 @@
 
 ## Description
 
-News Highlight is a python built application that displays a list of various news sources.On choosing the news source it displays the top news.
+News Highlight is a python built application that displays a list of various news sources.On choosing the news source it displays the top news.One is also
 
 ## User Stories
 These are the behaviours that the  application
