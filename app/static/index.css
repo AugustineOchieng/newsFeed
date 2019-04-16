@@ -17,3 +17,7 @@ p{
   sans-serif;
   font-size: 100px;
 }
+body{
+  background-color: #ebbe9b;
+  background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%);
+}
