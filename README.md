@@ -87,7 +87,7 @@ $ python3.6 -m pip install Flask-Script`
 * Flask
 
 ## Known Bugs
-* Incase of any bug reachout to gusochieng@gmail.com
+* Incase of any bug reachout to me through gmail at gusochieng@gmail.com
 
 ### License
 *License is under MIT 2019*
