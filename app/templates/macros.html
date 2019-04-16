@@ -1,0 +1,18 @@
+{% macro %}
+<!-- Card content -->
+<div class="card-body card-body-cascade text-center">
+
+  <!-- Text -->
+  <p class="card-text">{% for source in sources %}.</p>
+<p class="card-text">{{source.edescription}}</p>
+  <!-- Link -->
+  <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
+    <h5 class="waves-effect waves-light"> <a href="/article/{{source.id}}">
+        <p class="text-capitalize text-muted">{{source.id}}</p>
+      </a><i class="fas fa-angle-double-right ml-2"></i></h5>
+  </a>
+
+</div>
+{% endfor %} 
+{% endmacro %}
+<!-- Card content -->

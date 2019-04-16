@@ -1,17 +1,72 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
+{% extends 'base.html'%} {% block content %}
 
-    </title>
-  </head>
-  <body>
-    <!-- Popular movie section  -->
-    <h3> Articles</h3>
-    <ul>
-      {% for article in name %}
-      <li>{{ article.title}}</li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+{% block styles%}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Arapey|Cinzel|Dosis" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static',filename='css/navbar.css')}}">
+{% endblock %}
+<br>
+<br>
+<br>
+
+<body>
+
+  <div class="main">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-3">
+          <h4></h4>
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <h1 text-align="center"> HEADLINES </h3>
+              <div class="container">
+                <div class="card-columns">
+
+                  {% for headlines in headlines %}
+                  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+
+                  <div class="card">
+                    <img class="card" src="{{headlines.image}}" alt="Card image cap" height="200px">
+
+                    <p>{{headlines.author}}</p>
+                   <p> {{headlines.description}}</p>
+                    <a href="{{headlines.url}}">
+                      <p class="card-text">Read More</p>
+                    </a>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Publish date:{{headlines.time}}</small>
+                  </div>
+
+                  {% endfor %}
+                </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+            {% for source in sources %}
+            <p></p>
+            <a href="/article/{{source.id}}">
+              <img
+                src="https://previews.123rf.com/images/businessvector/businessvector1510/businessvector151000024/45788264-newspaper-icon.jpg"
+                height="30">
+
+              <p class="text-capitalize text-muted">{{source.id}}</p>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+{% endblock %}
